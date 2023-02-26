@@ -46,10 +46,14 @@ export default function Home() {
                 />
               </li>
               <li>
-                <Image src={github2} width={35} height={35} className="cursor-pointer mx-5" />
+                <a href="https://github.com/thomasbalicki">
+                  <Image src={github2} width={35} height={35} className="cursor-pointer mx-5" />
+                </a>
               </li>
               <li>
-                <Image src={linkedin2} width={35} height={35} className="cursor-pointer" />
+                <a href="https://www.linkedin.com/in/thomas-balicki-3105ba205/">
+                  <Image src={linkedin2} width={35} height={35} className="cursor-pointer" />
+                </a>
               </li>
               <li>
                 <a className="bg-gradient-to-r from-red-400 to-orange-400 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a>
@@ -57,11 +61,11 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-8 dark:text-white'>
-            <h2 className='text-5xl py-2 text-red-400 font-medium md:text-6xl'>Thomas Balicki</h2>
+            <h2 className='text-5xl py-2 text-red-500 font-medium md:text-6xl'>Thomas Balicki</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Software Developer.</h3>
             <p className='text-md py-4 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>Hi there, I'm Tom - a programmer and web developer from Milwaukee. Despite only beginning my programming journey a year ago, it's become my biggest passion, pushing me to continually learn and improve my skills. Seeing something I've created from scratch come to life online is a truly incredible feeling. I'm excited to keep exploring this ever-evolving field and see where my passion takes me next. Thank you for taking the time to learn a little bit about me, and I can't wait to share more with you!</p>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-red-400 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 dark:outline outline-2 outline-red-500">
+          <div className="relative mx-auto bg-gradient-to-b from-red-400 rounded-full w-80 h-80 mt-15 overflow-hidden md:h-96 md:w-96 dark:outline outline-2 outline-red-500">
             <Image src={portrait1} layout="fill" objectFit="cover" />
           </div>
         </section>
@@ -161,6 +165,11 @@ export default function Home() {
               </p>
             </p>
           </div>
+          <footer class="bg-stone-100 text-black py-10">
+            <div class="container mx-auto text-center">
+              <p>&copy; 2023 My Website. All rights reserved.</p>
+            </div>
+          </footer>
         </section>
       </main>
     </div>
