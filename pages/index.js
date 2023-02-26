@@ -21,6 +21,7 @@ import postgresicon from "../public/postgresicon.png";
 import cicdicon from "../public/cicdicon.png";
 import devopsicon from "../public/devopsicon.png";
 import sdlcicon from "../public/sdlcicon.png";
+import mastodonicon from "../public/mastodonicon.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -47,12 +48,17 @@ export default function Home() {
               </li>
               <li>
                 <a href="https://github.com/thomasbalicki">
-                  <Image src={github2} width={35} height={35} className="cursor-pointer mx-5" />
+                  <Image src={github2} width={35} height={35} className="cursor-pointer hover:scale-105 transition-transform mx-5" />
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/thomas-balicki-3105ba205/">
-                  <Image src={linkedin2} width={35} height={35} className="cursor-pointer" />
+                  <Image src={linkedin2} width={35} height={35} className="cursor-pointer hover:scale-105 transition-transform" />
+                </a>
+              </li>
+              <li>
+                <a href="https://vmst.io/@ThomasTheTrainwreck">
+                  <Image src={mastodonicon} width={35} height={35} className="cursor-pointer hover:scale-105 transition-transform mx-5" />
                 </a>
               </li>
               <li>
@@ -73,7 +79,7 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-5 text-red-400'>Skills</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-              With a solid foundation in several programming languages and frameworks, including HTML, CSS with Tailwind, Python, JavaScript (with a focus on React), SQL, and Flask, I am confident in my abilities to tackle a wide range of programming challenges. I am proficient in using various tools such as VS Code and PyCharm for coding, as well as Github for version control. Additionally, I have experience working with PostgresSQL and PGAdmin for managing databases. I have a basic understanding of the software development life cycle (SDLC) methodologies and am familiar with continuous integration/continuous deployment (CI/CD) workflows. I am also knowledgeable in DevOps practices and am committed to implementing them in my work. I am eager to continue learning and expanding my skillset in order to take on even more complex projects in the future.
+              With a solid foundation in several programming languages and frameworks, including <span className="text-red-400">HTML, CSS with Tailwind, Python, JavaScript (with a focus on React), SQL, and Flask</span>, I am confident in my abilities to tackle a wide range of programming challenges. I am proficient in using various tools such as <span className="text-red-400">VS Code and PyCharm</span> for coding, as well as <span className="text-red-400">Github</span> for version control. Additionally, I have experience working with <span className="text-red-400">PostgresSQL and PGAdmin</span> for managing databases. I have a basic understanding of the software development life cycle (SDLC) methodologies and am familiar with continuous integration/continuous delivery (CI/CD) workflows. I am also knowledgeable in DevOps practices and am committed to implementing them in my work. I am eager to continue learning and expanding my skillset in order to take on even more complex projects in the future.
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -161,11 +167,11 @@ export default function Home() {
             </p>
             <p>
               <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-                Ut enim ad minim veniam, <span className="text-red-400 dark:text-red-400">quis nostrud</span> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                Ut enim ad minim veniam, <span className="text-red-400">quis nostrud</span> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
               </p>
             </p>
           </div>
-          <footer class="bg-stone-100 text-black py-10">
+          <footer class="bg-stone-100 text-black py-10 dark:text-white dark:bg-gray-900">
             <div class="container mx-auto text-center">
               <p>&copy; 2023 My Website. All rights reserved.</p>
             </div>
