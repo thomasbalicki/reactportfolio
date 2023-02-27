@@ -34,6 +34,9 @@ export default function Home() {
       </Head>
       <main className='bg-stone-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
+
+          {/*-------------------------------------------My Nav Bar------------------------------------------------------------------*/}
+
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons dark:text-white'>Portfolio</h1>
             <ul className='flex items-center'>
@@ -66,6 +69,9 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+
+          {/*-------------------------------------------NAME AND INTRO------------------------------------------------------------------*/}
+
           <div className='text-center p-8 dark:text-white'>
             <h2 className='text-5xl py-2 text-red-500 font-medium md:text-6xl'>Thomas Balicki</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Software Developer.</h3>
@@ -76,13 +82,20 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
-            <h3 className='text-3xl py-5 text-red-400'>Skills</h3>
+
+          {/*-------------------------------------------Skills section & paragraph------------------------------------------------------------------*/}
+          {/*-------------- TODO: Create function to toggle between skills and education, displaying the content of the selected div ---------------*/}
+
+          <div className='shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400'>
+            <button className='text-3xl py-5 text-red-400'>Skills</button>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
               With a solid foundation in several programming languages and frameworks, including <span className="text-red-400">HTML, CSS with Tailwind, Python, JavaScript (with a focus on React), SQL, and Flask</span>, I am confident in my abilities to tackle a wide range of programming challenges. I am proficient in using various tools such as <span className="text-red-400">VS Code and PyCharm</span> for coding, as well as <span className="text-red-400">Github</span> for version control. Additionally, I have experience working with <span className="text-red-400">PostgresSQL and PGAdmin</span> for managing databases. I have a basic understanding of the software development life cycle (SDLC) methodologies and am familiar with continuous integration/continuous delivery (CI/CD) workflows. I am also knowledgeable in DevOps practices and am committed to implementing them in my work. I am eager to continue learning and expanding my skillset in order to take on even more complex projects in the future.
             </p>
           </div>
           <div className="lg:flex gap-10">
+
+            {/*-------------------------------------------My Stack Div------------------------------------------------------------------*/}
+
             <div className="bg-gradient-to-tr from-red-100 to-orange-100 flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-red-400">
               <div className="flex items-center justify-center">
                 <Image src={languages} width={50} height={50} />
@@ -114,6 +127,9 @@ export default function Home() {
                 <p className="text-gray-800 py-1 px-1">Flask</p>
               </div>
             </div>
+
+            {/*-------------------------------------------My Technologies Div------------------------------------------------------------------*/}
+
             <div className="bg-gradient-to-tr from-orange-100 to-red-100 flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-stone-100">
               <div className="flex items-center justify-center">
                 <Image src={technologies} width={50} height={50} />
@@ -138,6 +154,9 @@ export default function Home() {
               </div>
               <p className="text-gray-800 py-1 px-1 flex flex-row">And many more..</p>
             </div>
+
+            {/*-------------------------------------------My Methods Div------------------------------------------------------------------*/}
+
             <div className="bg-gradient-to-tr from-orange-100 to-red-100 flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-stone-100">
               <div className="flex items-center justify-center">
                 <Image src={methods} width={50} height={50} />
@@ -159,6 +178,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/*-------------------------------------------My Portfolio Section------------------------------------------------------------------*/}
+
         <section>
           <div>
             <h3 className='text-3xl py-1 text-red-400'>Portfolio</h3>
@@ -171,8 +193,8 @@ export default function Home() {
               </p>
             </p>
           </div>
-          <footer class="bg-stone-100 text-black py-10 dark:text-white dark:bg-gray-900">
-            <div class="container mx-auto text-center">
+          <footer className="bg-stone-100 text-black py-10 dark:text-white dark:bg-gray-900">
+            <div className="container mx-auto text-center">
               <p>&copy; 2023 My Website. All rights reserved.</p>
             </div>
           </footer>
