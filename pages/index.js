@@ -38,8 +38,8 @@ export default function Home() {
 
           {/*-------------------------------------------My Nav Bar------------------------------------------------------------------*/}
 
-          <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-burtons dark:text-white'>Portfolio</h1>
+          <nav className='py-10 mb-10 flex sm:flex-row justify-between'>
+            <h1 className='text-xl font-burtons dark:text-white pb-1'>Portfolio</h1>
             <ul className='flex items-center'>
               <li>
                 <Image
@@ -47,26 +47,26 @@ export default function Home() {
                   width={40}
                   height={40}
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer hover:scale-105 transition-transform"
+                  className="cursor-pointer hover:scale-105 transition-transform mx-1"
                 />
               </li>
               <li>
                 <a href="https://github.com/thomasbalicki">
-                  <Image src={github2} width={35} height={35} className="cursor-pointer hover:scale-105 transition-transform mx-5" />
+                  <Image src={github2} width={30} height={30} className="cursor-pointer hover:scale-105 transition-transform mx-1" />
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/thomas-balicki-3105ba205/">
-                  <Image src={linkedin2} width={35} height={35} className="cursor-pointer hover:scale-105 transition-transform" />
+                  <Image src={linkedin2} width={30} height={30} className="cursor-pointer hover:scale-105 transition-transform mx-1" />
                 </a>
               </li>
               <li>
                 <a href="https://vmst.io/@ThomasTheTrainwreck">
-                  <Image src={mastodonicon} width={35} height={35} className="cursor-pointer hover:scale-105 transition-transform mx-5" />
+                  <Image src={mastodonicon} width={30} height={30} className="cursor-pointer hover:scale-105 transition-transform mx-1" />
                 </a>
               </li>
               <li>
-                <a className="bg-gradient-to-r from-red-400 to-orange-400 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a>
+                <a className="bg-gradient-to-r from-red-400 to-orange-400 text-white px-3 py-2 rounded-md mx-1" href="#">Resume</a>
               </li>
             </ul>
           </nav>
