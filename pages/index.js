@@ -23,10 +23,22 @@ import devopsicon from "../public/devopsicon.png";
 import sdlcicon from "../public/sdlcicon.png";
 import mastodonicon from "../public/mastodonicon.png";
 
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [showSkills, setShowSkills] = useState(true);
+
+  const handleSkillsClick = () => {
+    setShowSkills(true);
+  };
+  const handleEducationClicki = () => {
+    setShowSkills(false);
+  };
+
   return (
+
     <div className={darkMode ? "dark" : ""}>
+
       {/*-------------------------------------------Page Header------------------------------------------------------------------*/}
       <Head>
         <title>Thomas Balicki Portfolio</title>
@@ -88,10 +100,16 @@ export default function Home() {
           {/*-------------- TODO: Create function to toggle between skills and education, displaying the content of the selected div ---------------*/}
 
           <div className='shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-500 dark:bg-opacity-10'>
-            <button className='text-3xl py-5 text-red-400'>Skills</button>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-              With a solid foundation in several programming languages and frameworks, including <span className="text-red-400">HTML, CSS with Tailwind, Python, JavaScript (with a focus on React), SQL, and Flask</span>, I am confident in my abilities to tackle a wide range of programming challenges. I am proficient in using various tools such as <span className="text-red-400">VS Code and PyCharm</span> for coding, as well as <span className="text-red-400">Github</span> for version control. Additionally, I have experience working with <span className="text-red-400">PostgresSQL and PGAdmin</span> for managing databases. I have a basic understanding of the software development life cycle (SDLC) methodologies and am familiar with continuous integration/continuous delivery (CI/CD) workflows. I am also knowledgeable in DevOps practices and am committed to implementing them in my work. I am eager to continue learning and expanding my skillset in order to take on even more complex projects in the future.
-            </p>
+            <button className='text-3xl py-5 text-red-400 mx-2' onClick={handleSkillsClick}>Skills</button><button className='text-3xl py-5 text-red-400 mx-2' onClick={handleEducationClicki}>Education</button>
+            {showSkills ? (
+              <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
+                With a solid foundation in several programming languages and frameworks, including <span className="text-red-400">HTML, CSS with Tailwind, Python, JavaScript (with a focus on React), SQL, and Flask</span>, I am confident in my abilities to tackle a wide range of programming challenges. I am proficient in using various tools such as <span className="text-red-400">VS Code and PyCharm</span> for coding, as well as <span className="text-red-400">Github</span> for version control. Additionally, I have experience working with <span className="text-red-400">PostgresSQL and PGAdmin</span> for managing databases. I have a basic understanding of the software development life cycle (SDLC) methodologies and am familiar with continuous integration/continuous delivery (CI/CD) workflows. I am also knowledgeable in DevOps practices and am committed to implementing them in my work. I am eager to continue learning and expanding my skillset in order to take on even more complex projects in the future.
+              </p>
+            ) : (
+              <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
+                This is the education paragraph
+              </p>
+            )}
           </div>
           <div className="lg:flex gap-10">
 
