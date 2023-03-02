@@ -21,7 +21,9 @@ import postgresicon from "../public/postgresicon.png";
 import cicdicon from "../public/cicdicon.png";
 import devopsicon from "../public/devopsicon.png";
 import sdlcicon from "../public/sdlcicon.png";
+import collegeicon from "../public/collegeicon.png"
 import mastodonicon from "../public/mastodonicon.png";
+import scroll from "../public/scroll.png";
 
 
 export default function Home() {
@@ -98,19 +100,29 @@ export default function Home() {
         <section>
 
           {/*-------------------------------------------Skills section & paragraph------------------------------------------------------------------*/}
-          {/*-------------- TODO: Create function to toggle between skills and education, displaying the content of the selected div ---------------*/}
 
           <div className='shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-500 dark:bg-opacity-10'>
-            <button className='outline outline-2 outline-red-400 hover:scale-105 transition-transform bg-gradient-to-r from-red-400 to-orange-400 text-white text-2xl px-3 py-1 rounded-md mx-2' onClick={handleSkillsClick}>Skills</button>
-            <button className='outline outline-2 outline-red-400 hover:scale-105 transition-transform bg-gradient-to-r from-red-400 to-orange-400 text-white text-2xl px-3 py-1 rounded-md mx-2' onClick={handleEducationClick}>Education</button>
+            <button className='outline outline-2 outline-red-400 hover:scale-105 transition-transform bg-gradient-to-r from-red-400 to-orange-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleSkillsClick}>Skills</button>
+            <button className='outline outline-2 outline-red-400 hover:scale-105 transition-transform bg-gradient-to-r from-red-400 to-orange-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleEducationClick}>Education</button>
             {showSkills ? (
               <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
                 With a solid foundation in several programming languages and frameworks, including <span className="text-red-400">HTML, CSS with Tailwind, Python, JavaScript (with a focus on React), SQL, and Flask</span>, I am confident in my abilities to tackle a wide range of programming challenges. I am proficient in using various tools such as <span className="text-red-400">VS Code and PyCharm</span> for coding, as well as <span className="text-red-400">Github</span> for version control. Additionally, I have experience working with <span className="text-red-400">PostgresSQL and PGAdmin</span> for managing databases. I have a basic understanding of the software development life cycle (SDLC) methodologies and am familiar with continuous integration/continuous delivery (CI/CD) workflows. I am also knowledgeable in DevOps practices and am committed to implementing them in my work. I am eager to continue learning and expanding my skillset in order to take on even more complex projects in the future.
               </p>
             ) : (
-              <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-                This is the education paragraph
-              </p>
+              <div className="flex-1 p-5 text-lg items-center justify-start py-5 mx-2">
+                <div className="flex flex-row items-center justify-start">
+                  <Image src={collegeicon} width={30} height={30} />
+                  <p className='mx-2 dark:text-white'><span className="text-red-400">University of Wisconsin Milwaukee</span> - Bachelors Business Marketing</p>
+                </div>
+                <div className="flex flex-row items-center justify-start py-5">
+                  <Image src={scroll} width={30} height={30} />
+                  <p className='mx-2 dark:text-white'><span className="text-red-400">Nucamp Coding Bootcamp</span> - Back End, SQL, and DevOps Developer with Python</p>
+                </div>
+                <div className="flex flex-row items-center justify-start">
+                  <Image src={scroll} width={30} height={30} />
+                  <p className='mx-2 dark:text-white'><span className="text-red-400">Nucamp Coding Bootcamp</span> - Full Stack Web and Mobile App Developer</p>
+                </div>
+              </div>
             )}
           </div>
           <div className="lg:flex gap-10">
@@ -206,11 +218,9 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1 text-red-400'>Portfolio</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
             <p>
               <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-                Ut enim ad minim veniam, <span className="text-red-400">quis nostrud</span> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
               </p>
             </p>
           </div>
