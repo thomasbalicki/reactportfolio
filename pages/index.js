@@ -131,7 +131,7 @@ export default function Home() {
 
             {/*-------------------------------------------My Stack Div------------------------------------------------------------------*/}
 
-            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-teal-400">
+            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-teal-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
               <div className="flex items-center justify-center">
                 <Image src={languages} width={50} height={50} />
                 <h3 className="text-2xl font-medium ml-4">My Stack</h3>
@@ -139,33 +139,33 @@ export default function Home() {
               <h4 className="py-4 text-lg text-teal-500">Languages & Frameworks</h4>
               <div className="flex flex-row items-center justify-start">
                 <Image src={htmlicon} width={30} height={30} />
-                <p className="text-gray-800 py-1">HTML</p>
+                <p className="text-gray-800 py-1 dark:text-white">HTML</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={cssicon} width={30} height={30} />
-                <p className="text-gray-800 py-1">CSS, Tailwind</p>
+                <p className="text-gray-800 py-1 dark:text-white">CSS, Tailwind</p>
               </div>
               <div className="flex flex-row items-center justify-start">
                 <Image src={pythonicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">Python</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">Python</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={javascripticon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">JavaScript, React</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">JavaScript, React</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={sqlicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">SQL</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">SQL</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={flaskicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">Flask</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">Flask</p>
               </div>
             </div>
 
             {/*-------------------------------------------My Technologies Div------------------------------------------------------------------*/}
 
-            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-teal-400">
+            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-teal-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
               <div className="flex items-center justify-center">
                 <Image src={technologies} width={50} height={50} />
                 <h3 className="text-2xl font-medium ml-4">Technologies</h3>
@@ -173,26 +173,26 @@ export default function Home() {
               <h4 className="py-4 text-lg text-teal-500">Tools I use</h4>
               <div className="flex flex-row items-center justify-start">
                 <Image src={vscodeicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">VS Code</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">VS Code</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={pycharmicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">PyCharm</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">PyCharm</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={postgresicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">PostgresSQL/PGAdmin</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">PostgresSQL/PGAdmin</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={github2} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">Github</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">Github</p>
               </div>
-              <p className="text-gray-800 py-1 px-1 flex flex-row">And many more..</p>
+              <p className="text-gray-800 py-1 px-1 flex flex-row dark:text-white">And many more..</p>
             </div>
 
             {/*-------------------------------------------My Methods Div------------------------------------------------------------------*/}
 
-            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-teal-400">
+            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-teal-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
               <div className="flex items-center justify-center">
                 <Image src={methods} width={50} height={50} />
                 <h3 className="text-2xl font-medium ml-4">Methods</h3>
@@ -200,15 +200,15 @@ export default function Home() {
               <h4 className="py-4 text-lg text-teal-500">My workflow</h4>
               <div className="flex flex-row items-center justify-start">
                 <Image src={sdlcicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">SDLC</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">SDLC</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={cicdicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">CI/CD</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">CI/CD</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={devopsicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1">DevOps</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">DevOps</p>
               </div>
             </div>
           </div>
