@@ -24,7 +24,8 @@ import sdlcicon from "../public/sdlcicon.png";
 import collegeicon from "../public/collegeicon.png"
 import mastodonicon from "../public/mastodonicon.png";
 import scroll from "../public/scroll.png";
-import construction from "../public/construction.png";
+import dockericon from "../public/dockericon.png";
+import djangoicon from "../public/djangoicon.png";
 
 
 export default function Home() {
@@ -161,6 +162,10 @@ export default function Home() {
                 <Image src={flaskicon} width={30} height={30} />
                 <p className="text-gray-800 py-1 px-1 dark:text-white">Flask</p>
               </div>
+              <div className="flex flex-row items-center justify-start py-1">
+                <Image src={djangoicon} width={30} height={30} />
+                <p className="text-gray-800 py-1 px-1 dark:text-white">Django</p>
+              </div>
             </div>
 
             {/*-------------------------------------------My Technologies Div------------------------------------------------------------------*/}
@@ -186,6 +191,10 @@ export default function Home() {
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={github2} width={30} height={30} />
                 <p className="text-gray-800 py-1 px-1 dark:text-white">Github</p>
+              </div>
+              <div className="flex flex-row items-center justify-start py-1">
+                <Image src={dockericon} width={30} height={30} />
+                <p className="text-gray-800 py-1 px-1 dark:text-white">Docker</p>
               </div>
               <p className="text-gray-800 py-1 px-1 flex flex-row dark:text-white">And many more..</p>
             </div>
