@@ -83,7 +83,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a className="bg-gradient-to-r from-teal-400 to-blue-400 text-white px-3 py-2 rounded-md mx-1" href="#">Resume</a>
+                <a className="bg-gradient-to-r from-red-400 to-orange-400 text-white px-3 py-2 rounded-md mx-1" href="#">Resume</a>
               </li>
             </ul>
           </nav>
@@ -91,11 +91,11 @@ export default function Home() {
           {/*-------------------------------------------NAME AND INTRO------------------------------------------------------------------*/}
           <div className='flex flex-wrap items-center justify-center pb-10'>
             <div className='p-5 dark:text-white w-full md:w-1/2'>
-              <h2 className='text-4xl py-2 text-teal-500 font-medium md:text-6xl dark:text-teal-400'>Thomas Balicki</h2>
+              <h2 className='text-4xl py-2 text-red-500 font-medium md:text-6xl dark:text-red-500'>Thomas Balicki</h2>
               <h3 className='text-2xl py-2 md:text-3xl'>Software Developer.</h3>
               <p className='text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-white'>Hi there, I'm Tom - a programmer and web developer from Milwaukee. Despite only beginning my programming journey a year ago, it's become my biggest passion, pushing me to continually learn and improve my skills. Seeing something I've created from scratch come to life online is a truly incredible feeling. I'm excited to keep exploring this ever-evolving field and see where my passion takes me next. Thank you for taking the time to learn a little bit about me, and I can't wait to share more with you!</p>
             </div>
-            <div className="relative rounded-full w-80 h-80 mt-10 md:mt-0 overflow-hidden md:h-96 md:w-96 dark:outline outline-2 outline-teal-500" style={{ marginBottom: '-40px' }}>
+            <div className="relative rounded-full w-80 h-80 mt-10 md:mt-0 overflow-hidden md:h-96 md:w-96 dark:outline outline-2 outline-red-500" style={{ marginBottom: '-40px' }}>
               <Image src={portrait1} layout="fill" objectFit="cover" className="rounded-full" />
             </div>
           </div>
@@ -104,26 +104,26 @@ export default function Home() {
 
           {/*-------------------------------------------Skills section & paragraph------------------------------------------------------------------*/}
 
-          <div className='shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-teal-400 dark:bg-gray-500 dark:bg-opacity-10'>
-            <button className='hover:bg-teal-300 transition-transform bg-teal-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleSkillsClick}>Skills</button>
-            <button className='hover:bg-teal-300 transition-transform bg-teal-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleEducationClick}>Education</button>
+          <div className='shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-500 dark:bg-opacity-10'>
+            <button className='hover:bg-red-300 transition-transform bg-red-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleSkillsClick}>Skills</button>
+            <button className='hover:bg-red-300 transition-transform bg-red-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleEducationClick}>Education</button>
             {showSkills ? (
               <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-                With a solid foundation in several programming languages and frameworks, including <span className="text-teal-400">HTML, CSS with Tailwind, Python, JavaScript (with a focus on React), SQL, and Flask</span>, I am confident in my abilities to tackle a wide range of programming challenges. I am proficient in using various tools such as <span className="text-teal-400">VS Code and PyCharm</span> for coding, as well as <span className="text-teal-400">Github</span> for version control. Additionally, I have experience working with <span className="text-teal-400">PostgresSQL and PGAdmin</span> for managing databases. I have a basic understanding of the software development life cycle (SDLC) methodologies and am familiar with continuous integration/continuous delivery (CI/CD) workflows. I am also knowledgeable in DevOps practices and am committed to implementing them in my work. I am eager to continue learning and expanding my skillset in order to take on even more complex projects in the future.
+                With a solid foundation in several programming languages and frameworks, including <span className="text-red-400">HTML, CSS with Tailwind, Python, JavaScript (with a focus on React), SQL, and Flask</span>, I am confident in my abilities to tackle a wide range of programming challenges. I am proficient in using various tools such as <span className="text-red-400">VS Code and PyCharm</span> for coding, as well as <span className="text-red-400">Github</span> for version control. Additionally, I have experience working with <span className="text-red-400">PostgresSQL and PGAdmin</span> for managing databases. I have a basic understanding of the software development life cycle (SDLC) methodologies and am familiar with continuous integration/continuous delivery (CI/CD) workflows. I am also knowledgeable in DevOps practices and am committed to implementing them in my work. I am eager to continue learning and expanding my skillset in order to take on even more complex projects in the future.
               </p>
             ) : (
               <div className="flex-1 p-5 text-lg items-center justify-start py-5 mx-2">
                 <div className="flex flex-row items-center justify-start">
                   <Image src={collegeicon} width={30} height={30} />
-                  <p className='mx-2 dark:text-white'><span className="text-teal-500">University of Wisconsin Milwaukee</span> - Bachelors Business Marketing</p>
+                  <p className='mx-2 dark:text-white'><span className="text-red-500">University of Wisconsin Milwaukee</span> - Bachelors Business Marketing</p>
                 </div>
                 <div className="flex flex-row items-center justify-start py-5">
                   <Image src={scroll} width={30} height={30} />
-                  <p className='mx-2 dark:text-white'><span className="text-teal-500">Nucamp Coding Bootcamp</span> - Back End, SQL, and DevOps Developer with Python</p>
+                  <p className='mx-2 dark:text-white'><span className="text-red-500">Nucamp Coding Bootcamp</span> - Back End, SQL, and DevOps Developer with Python</p>
                 </div>
                 <div className="flex flex-row items-center justify-start">
                   <Image src={scroll} width={30} height={30} />
-                  <p className='mx-2 dark:text-white'><span className="text-teal-500">Nucamp Coding Bootcamp</span> - Full Stack Web and Mobile App Developer</p>
+                  <p className='mx-2 dark:text-white'><span className="text-red-500">Nucamp Coding Bootcamp</span> - Full Stack Web and Mobile App Developer</p>
                 </div>
               </div>
             )}
@@ -132,12 +132,12 @@ export default function Home() {
 
             {/*-------------------------------------------My Stack Div------------------------------------------------------------------*/}
 
-            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-teal-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
+            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
               <div className="flex items-center justify-center">
                 <Image src={languages} width={50} height={50} />
                 <h3 className="text-2xl font-medium ml-4">My Stack</h3>
               </div>
-              <h4 className="py-4 text-lg text-teal-500">Languages & Frameworks</h4>
+              <h4 className="py-4 text-lg text-red-500">Languages & Frameworks</h4>
               <div className="flex flex-row items-center justify-start">
                 <Image src={htmlicon} width={30} height={30} />
                 <p className="text-gray-800 py-1 dark:text-white">HTML</p>
@@ -170,12 +170,12 @@ export default function Home() {
 
             {/*-------------------------------------------My Technologies Div------------------------------------------------------------------*/}
 
-            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-teal-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
+            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
               <div className="flex items-center justify-center">
                 <Image src={technologies} width={50} height={50} />
                 <h3 className="text-2xl font-medium ml-4">Technologies</h3>
               </div>
-              <h4 className="py-4 text-lg text-teal-500">Tools I use</h4>
+              <h4 className="py-4 text-lg text-red-500">Tools I use</h4>
               <div className="flex flex-row items-center justify-start">
                 <Image src={vscodeicon} width={30} height={30} />
                 <p className="text-gray-800 py-1 px-1 dark:text-white">VS Code</p>
@@ -201,12 +201,12 @@ export default function Home() {
 
             {/*-------------------------------------------My Methods Div------------------------------------------------------------------*/}
 
-            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-teal-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
+            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
               <div className="flex items-center justify-center">
                 <Image src={methods} width={50} height={50} />
                 <h3 className="text-2xl font-medium ml-4">Methods</h3>
               </div>
-              <h4 className="py-4 text-lg text-teal-500">My workflow</h4>
+              <h4 className="py-4 text-lg text-red-500">My workflow</h4>
               <div className="flex flex-row items-center justify-start">
                 <Image src={sdlcicon} width={30} height={30} />
                 <p className="text-gray-800 py-1 px-1 dark:text-white">SDLC</p>
@@ -227,7 +227,7 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1 text-teal-400'>Portfolio</h3>
+            <h3 className='text-3xl py-1 text-red-400'>Portfolio</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
               Hello! The portfolio section of my website is currently under development, but I'm putting in the effort to add my projects soon. You can view what I'm currently working on by clicking on the Github icon located at the top of the page which will direct you to my Github profile. There, you can explore all of my projects, browse through the code, and read the documentation for each one. Thank you for visiting my website, and I hope you enjoy my projects!
             </p>
@@ -238,30 +238,30 @@ export default function Home() {
 
         <section>
           <div className='flex justify-end'>
-            <h3 className='text-3xl pt-10 text-teal-400'>Contact Me</h3>
+            <h3 className='text-3xl pt-10 text-red-400'>Contact Me</h3>
           </div>
           <div className='flex justify-end'>
-            <form action="/contact" method="POST" class="max-w-md bg-stone-100 flex-1 shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-teal-400 dark:bg-gray-500 dark:bg-opacity-10">
+            <form action="/contact" method="POST" class="max-w-md bg-stone-100 flex-1 shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-500 dark:bg-opacity-10">
               <div class="mb-4">
-                <label class="block text-teal-400 text-sm font-bold mb-2" for="name">
+                <label class="block text-red-400 text-sm font-bold mb-2" for="name">
                   Name
                 </label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your name" />
               </div>
               <div class="mb-4">
-                <label class="block text-teal-400 text-sm font-bold mb-2" for="email">
+                <label class="block text-red-400 text-sm font-bold mb-2" for="email">
                   Email
                 </label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your email" />
               </div>
               <div class="mb-4">
-                <label class="block text-teal-400 text-sm font-bold mb-2" for="message">
+                <label class="block text-red-400 text-sm font-bold mb-2" for="message">
                   Message
                 </label>
                 <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message"></textarea>
               </div>
               <div class="flex items-center justify-between">
-                <button class="bg-teal-400 hover:bg-teal-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                <button class="bg-red-400 hover:bg-red-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                   Send
                 </button>
               </div>
