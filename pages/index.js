@@ -260,6 +260,13 @@ export default function Home() {
                 </label>
                 <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message"></textarea>
               </div>
+              {/* Terms of service */}
+              <div class="mb-4">
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="terms" value="checked" />
+                  <p className="text-sm text-grey-500">I agree to be contacted via email</p>
+                </div>
+              </div>
               <div class="flex items-center justify-between">
                 <button class="bg-red-400 hover:bg-red-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                   Send
