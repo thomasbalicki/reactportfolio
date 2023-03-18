@@ -14,9 +14,7 @@ import cssicon from "../public/cssicon.png";
 import pythonicon from "../public/pythonicon.png";
 import javascripticon from "../public/javascripticon.png";
 import sqlicon from "../public/sqlicon.png";
-import flaskicon from "../public/flaskicon.png";
 import vscodeicon from "../public/vscodeicon.png";
-import pycharmicon from "../public/pycharmicon.png";
 import postgresicon from "../public/postgresicon.png";
 import cicdicon from "../public/cicdicon.png";
 import devopsicon from "../public/devopsicon.png";
@@ -25,7 +23,6 @@ import collegeicon from "../public/collegeicon.png"
 import mastodonicon from "../public/mastodonicon.png";
 import scroll from "../public/scroll.png";
 import dockericon from "../public/dockericon.png";
-import djangoicon from "../public/djangoicon.png";
 
 
 export default function Home() {
@@ -93,7 +90,7 @@ export default function Home() {
             <div className='p-5 dark:text-white w-full md:w-1/2'>
               <h2 className='text-4xl py-2 text-red-500 font-medium md:text-6xl dark:text-red-500'>Thomas Balicki</h2>
               <h3 className='text-2xl py-2 md:text-3xl'>Software Developer.</h3>
-              <p className='text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-white'>Hi there, I'm Tom - a programmer and web developer from Milwaukee. Despite only beginning my programming journey a year ago, it's become my biggest passion, pushing me to continually learn and improve my skills. Seeing something I've created from scratch come to life online is a truly incredible feeling. I'm excited to keep exploring this ever-evolving field and see where my passion takes me next. Thank you for taking the time to learn a little bit about me, and I can't wait to share more with you!</p>
+              <p className='text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-white'>Hi, I'm Tom, a programmer and web developer based in Milwaukee. I love the process of creating something from scratch and seeing it come to life online. I'm always seeking new opportunities to learn and improve my skills in this rapidly-evolving field. Thanks for reading about me and my work, and I look forward to sharing more with you!</p>
             </div>
             <div className="relative rounded-full w-80 h-80 mt-10 md:mt-0 overflow-hidden md:h-96 md:w-96 dark:outline outline-2 outline-red-500" style={{ marginBottom: '-40px' }}>
               <Image src={portrait1} layout="fill" objectFit="cover" className="rounded-full" />
@@ -108,8 +105,10 @@ export default function Home() {
             <button className='hover:bg-red-300 transition-transform bg-red-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleSkillsClick}>Skills</button>
             <button className='hover:bg-red-300 transition-transform bg-red-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleEducationClick}>Education</button>
             {showSkills ? (
-              <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-                With a solid foundation in several programming languages and frameworks, including <span className="text-red-400">HTML, CSS with Tailwind, Python, JavaScript (with a focus on React), SQL, and Flask</span>, I am confident in my abilities to tackle a wide range of programming challenges. I am proficient in using various tools such as <span className="text-red-400">VS Code and PyCharm</span> for coding, as well as <span className="text-red-400">Github</span> for version control. Additionally, I have experience working with <span className="text-red-400">PostgresSQL and PGAdmin</span> for managing databases. I have a basic understanding of the software development life cycle (SDLC) methodologies and am familiar with continuous integration/continuous delivery (CI/CD) workflows. I am also knowledgeable in DevOps practices and am committed to implementing them in my work. I am eager to continue learning and expanding my skillset in order to take on even more complex projects in the future.
+              <p className='text-sm py-2 leading-8 text-gray-800 dark:text-white'>
+                As a beginner with a fundamental understanding of various programming tools and technologies, I have a basic foundation in several programming languages and frameworks such as HTML, CSS with Tailwind, Python, JavaScript with React, and SQL. I am familiar with tools such as VS Code for coding and Github for version control, and am continuously increasing my proficiency.
+                Furthermore, I have experience working with PostgresSQL and PGAdmin for managing databases and building APIs using both flask and Django frameworks. While my understanding of software development life cycle (SDLC) methodologies and continuous integration/continuous delivery (CI/CD) workflows is still limited, I am willing to learn more about them and apply them in my work. I am also interested in DevOps practices and their potential impact on my projects.
+                Lastly, I have a fundamental understanding of how to deploy applications on Amazon AWS, Microsoft Azure, and Google Cloud, and I am eager to deepen my knowledge in this area. I am committed to continuing my learning and expanding my skills in order to take on more complex programming projects in the future.
               </p>
             ) : (
               <div className="flex-1 p-5 text-lg items-center justify-start py-5 mx-2">
@@ -144,7 +143,7 @@ export default function Home() {
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={cssicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 dark:text-white">CSS, Tailwind</p>
+                <p className="text-gray-800 py-1 dark:text-white">CSS</p>
               </div>
               <div className="flex flex-row items-center justify-start">
                 <Image src={pythonicon} width={30} height={30} />
@@ -152,19 +151,11 @@ export default function Home() {
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={javascripticon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1 dark:text-white">JavaScript, React</p>
+                <p className="text-gray-800 py-1 px-1 dark:text-white">JavaScript</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={sqlicon} width={30} height={30} />
                 <p className="text-gray-800 py-1 px-1 dark:text-white">SQL</p>
-              </div>
-              <div className="flex flex-row items-center justify-start py-1">
-                <Image src={flaskicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1 dark:text-white">Flask</p>
-              </div>
-              <div className="flex flex-row items-center justify-start py-1">
-                <Image src={djangoicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1 dark:text-white">Django</p>
               </div>
             </div>
 
@@ -179,10 +170,6 @@ export default function Home() {
               <div className="flex flex-row items-center justify-start">
                 <Image src={vscodeicon} width={30} height={30} />
                 <p className="text-gray-800 py-1 px-1 dark:text-white">VS Code</p>
-              </div>
-              <div className="flex flex-row items-center justify-start py-1">
-                <Image src={pycharmicon} width={30} height={30} />
-                <p className="text-gray-800 py-1 px-1 dark:text-white">PyCharm</p>
               </div>
               <div className="flex flex-row items-center justify-start py-1">
                 <Image src={postgresicon} width={30} height={30} />
@@ -236,7 +223,7 @@ export default function Home() {
 
         {/*-------------------------------------------Contact Me Section------------------------------------------------------------------*/}
 
-        <section>
+        {/*<section>
           <div className='flex justify-end'>
             <h3 className='text-3xl pt-10 text-red-400'>Contact Me</h3>
           </div>
@@ -261,7 +248,7 @@ export default function Home() {
                 <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message"></textarea>
               </div>
               {/* Terms of service */}
-              <div class="mb-4">
+        {/*<div class="mb-4">
                 <div className="flex items-center gap-2">
                   <input type="checkbox" name="terms" value="checked" />
                   <p className="text-sm text-grey-500">I agree to be contacted via email</p>
@@ -274,7 +261,7 @@ export default function Home() {
               </div>
             </form>
           </div>
-        </section>
+            </section>*/}
 
 
         {/*-------------------------------------------Footer Section------------------------------------------------------------------*/}
