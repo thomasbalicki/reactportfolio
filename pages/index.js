@@ -107,7 +107,7 @@ export default function Home() {
             {showSkills ? (
               <p className='text-sm py-2 leading-8 text-gray-800 dark:text-white'>
                 As a beginner with a fundamental understanding of various programming tools and technologies, I have a basic foundation in several programming languages and frameworks such as HTML, CSS with Tailwind, Python, JavaScript with React, and SQL. I am familiar with tools such as VS Code for coding and Github for version control, and am continuously increasing my proficiency.
-                Furthermore, I have experience working with PostgresSQL and PGAdmin for managing databases and building APIs using both flask and Django frameworks. While my understanding of software development life cycle (SDLC) methodologies and continuous integration/continuous delivery (CI/CD) workflows is still limited, I am willing to learn more about them and apply them in my work. I am also interested in DevOps practices and their potential impact on my projects.
+                Furthermore, I have experience working with PostgresSQL and PGAdmin for managing databases and building APIs using both flask and Django frameworks. While my understanding of software development life cycle (SDLC) methodologies and continuous integration/continuous delivery (CI/CD) workflows is still limited, I am willing to learn more about them and apply them in my work.
                 Lastly, I have a fundamental understanding of how to deploy applications on Amazon AWS, Microsoft Azure, and Google Cloud, and I am eager to deepen my knowledge in this area. I am committed to continuing my learning and expanding my skills in order to take on more complex programming projects in the future.
               </p>
             ) : (
@@ -214,9 +214,9 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1 text-red-400'>Portfolio</h3>
+            <h3 className='text-3xl py-1 text-red-400'>My Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-              Hello! The portfolio section of my website is currently under development, but I'm putting in the effort to add my projects soon. You can view what I'm currently working on by clicking on the Github icon located at the top of the page which will direct you to my Github profile. There, you can explore all of my projects, browse through the code, and read the documentation for each one. Thank you for visiting my website, and I hope you enjoy my projects!
+              Hello! This section of my website is currently under development, but I'm putting in the effort to add my projects soon. You can view what I'm currently working on by clicking on the Github icon located at the top of the page which will direct you to my Github profile. There, you can explore all of my projects, browse through the code, and read the documentation for each one. Thank you for visiting my website, and I hope you enjoy my projects!
             </p>
           </div>
         </section>
