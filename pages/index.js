@@ -4,7 +4,7 @@ import languages from "../public/languages.png";
 import technologies from "../public/technologies.png";
 import methods from "../public/methods.png";
 import { useState } from "react";
-import portrait1 from "../public/portrait1.jpg";
+import IMG_9164 from "../public/IMG_9164.jpg";
 import github2 from "../public/github2.png";
 import linkedin2 from "../public/linkedin2.png";
 import moon from "../public/moon.png";
@@ -23,7 +23,7 @@ import collegeicon from "../public/collegeicon.png"
 import mastodonicon from "../public/mastodonicon.png";
 import scroll from "../public/scroll.png";
 import dockericon from "../public/dockericon.png";
-
+import contactformscreenshot from "../public/contactformscreenshot.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -93,7 +93,7 @@ export default function Home() {
               <p className='text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-white'>Hi, I'm Tom, a programmer and web developer based in Milwaukee. I love the process of creating something from scratch and seeing it come to life online. I'm always seeking new opportunities to learn and improve my skills in this rapidly-evolving field. Thanks for reading about me and my work, and I look forward to sharing more with you!</p>
             </div>
             <div className="relative rounded-full w-80 h-80 mt-10 md:mt-0 overflow-hidden md:h-96 md:w-96 dark:outline outline-2 outline-red-500" style={{ marginBottom: '-40px' }}>
-              <Image src={portrait1} layout="fill" objectFit="cover" className="rounded-full" />
+              <Image src={IMG_9164} layout="fill" objectFit="cover" className="rounded-full" />
             </div>
           </div>
         </section>
@@ -216,9 +216,17 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1 text-red-400'>My Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-              Hello! This section of my website is currently under development, but I'm putting in the effort to add my projects soon. You can view what I'm currently working on by clicking on the Github icon located at the top of the page which will direct you to my Github profile. There, you can explore all of my projects, browse through the code, and read the documentation for each one. Thank you for visiting my website, and I hope you enjoy my projects!
+              Hello! This section of my website is currently under development, but I'm putting in the effort to add more projects soon. You can view what I'm currently working on by clicking on the Github icon located at the top of the page which will direct you to my Github profile. There, you can explore all of my projects, browse through the code, and read the documentation for each one. Thank you for visiting my website, and I hope you enjoy my projects!
             </p>
           </div>
+          <div className='shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-500 dark:bg-opacity-10 flex justify-between'>
+            <div className='w-1/2'></div>
+            <div className="relative w-1/2 rounded-lg overflow-hidden md:h-96 md:w-96">
+              <Image src={contactformscreenshot} layout="fill" className='object-cover' />
+            </div>
+
+          </div>
+
         </section>
 
         {/*-------------------------------------------Contact Me Section------------------------------------------------------------------*/}
