@@ -86,13 +86,13 @@ export default function Home() {
           </nav>
 
           {/*-------------------------------------------NAME AND INTRO------------------------------------------------------------------*/}
-          <div className='flex flex-wrap items-center justify-center pb-10'>
+          <div className='flex flex-wrap items-center justify-center'>
             <div className='p-5 dark:text-white w-full md:w-1/2'>
               <h2 className='text-4xl py-2 text-red-500 font-medium md:text-6xl dark:text-red-500'>Thomas Balicki</h2>
               <h3 className='text-2xl py-2 md:text-3xl'>Software Developer.</h3>
               <p className='text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-white'>Hi, I'm Tom, a programmer and web developer based in Milwaukee. I love the process of creating something from scratch and seeing it come to life online. I'm always seeking new opportunities to learn and improve my skills in this rapidly-evolving field. Thanks for reading about me and my work, and I look forward to sharing more with you!</p>
             </div>
-            <div className="relative rounded-full w-80 h-80 mt-10 md:mt-0 overflow-hidden md:h-96 md:w-96 dark:outline outline-2 outline-red-500" style={{ marginBottom: '-40px' }}>
+            <div className="relative rounded-full w-80 h-80 mt-10 md:mt-0 overflow-hidden md:h-96 md:w-96 dark:outline outline-2 outline-red-500">
               <Image src={IMG_9164} layout="fill" objectFit="cover" className="rounded-full" />
             </div>
           </div>
@@ -211,6 +211,7 @@ export default function Home() {
         </section>
 
         {/*-------------------------------------------My Portfolio Section------------------------------------------------------------------*/}
+        {/*-------------------------------------------TODO:optimize for small screens------------------------------------------------------------------*/}
 
         <section>
           <div>
@@ -219,12 +220,14 @@ export default function Home() {
               Hello! This section of my website is currently under development, but I'm putting in the effort to add more projects soon. You can view what I'm currently working on by clicking on the Github icon located at the top of the page which will direct you to my Github profile. There, you can explore all of my projects, browse through the code, and read the documentation for each one. Thank you for visiting my website, and I hope you enjoy my projects!
             </p>
           </div>
-          <div className='shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-500 dark:bg-opacity-10 flex justify-between'>
-            <div className='w-1/2'></div>
-            <div className="relative w-1/2 rounded-lg overflow-hidden md:h-96 md:w-96">
-              <Image src={contactformscreenshot} layout="fill" className='object-cover' />
+          <div className='shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-500 dark:bg-opacity-10 flex justify-between dark:text-white'>
+            <div className='w-1/2'>
+              <h3 className="text-2xl font-medium ml-4">Customer Feedback Form with Postgres Integration</h3>
+              <p className='p-5'>This project involved building a feedback submission form using HTML and CSS, which allowed customers to submit their feedback. The form was then connected to a Postgres database, which stored the feedback for future analysis. By creating this feedback submission form, customers were able to easily provide feedback on their experiences, while the database allowed for easy tracking and analysis of this feedback. This project showcases my skills in web development, database integration, and user experience design.</p>
             </div>
-
+            <div>
+              <Image src={contactformscreenshot} width={450} height={450} className="rounded-xl" />
+            </div>
           </div>
 
         </section>
@@ -281,6 +284,6 @@ export default function Home() {
         </footer>
 
       </main>
-    </div>
+    </div >
   )
 }

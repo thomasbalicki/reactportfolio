@@ -5,14 +5,5 @@ const nextConfig = {
 
 module.exports = nextConfig
 
-module.exports = {
-  // ...
-  pages: [
-    // ...
-    {
-      route: '/about-me',
-      file: 'about-me.js'
-    }
-  ]
-}
+
 
