@@ -48,7 +48,7 @@ export default function Home() {
         <link rel="icon" href="/portfolioicon.png" />
       </Head>
       <main className='bg-stone-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
-        <section className='min-h-screen'>
+        <section className='my-0 py-0'>
 
           {/*-------------------------------------------My Nav Bar------------------------------------------------------------------*/}
 
@@ -74,11 +74,11 @@ export default function Home() {
                   <Image src={linkedin2} width={30} height={30} className="cursor-pointer hover:scale-105 transition-transform mx-1" />
                 </a>
               </li>
-              <li>
+              {/*<li>
                 <a href="https://vmst.io/@ThomasTheTrainwreck">
                   <Image src={mastodonicon} width={30} height={30} className="cursor-pointer hover:scale-105 transition-transform mx-1" />
                 </a>
-              </li>
+  </li>*/}
               <li>
                 <a className="bg-gradient-to-r from-red-400 to-orange-400 text-white px-3 py-2 rounded-md mx-1" href="#">Resume</a>
               </li>
@@ -92,7 +92,7 @@ export default function Home() {
               <h3 className='text-2xl py-2 md:text-3xl'>Software Developer.</h3>
               <p className='text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-white'>Hi, I'm Tom, a programmer and web developer based in Milwaukee. I love the process of creating something from scratch and seeing it come to life online. I'm always seeking new opportunities to learn and improve my skills in this rapidly-evolving field. Thanks for reading about me and my work, and I look forward to sharing more with you!</p>
             </div>
-            <div className="relative rounded-full w-80 h-80 mt-10 md:mt-0 overflow-hidden md:h-96 md:w-96 dark:outline outline-2 outline-red-500">
+            <div className="relative rounded-full w-80 h-80 mt-10 md:mt-0 overflow-hidden md:h-96 md:w-96 ">
               <Image src={IMG_9164} layout="fill" objectFit="cover" className="rounded-full" />
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function Home() {
 
           {/*-------------------------------------------Skills section & paragraph------------------------------------------------------------------*/}
 
-          <div className='shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-500 dark:bg-opacity-10'>
+          <div className='shadow-xl p-5 rounded-xl my-10  dark:bg-gray-500 dark:bg-opacity-10'>
             <button className='hover:bg-red-300 transition-transform bg-red-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleSkillsClick}>Skills</button>
             <button className='hover:bg-red-300 transition-transform bg-red-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleEducationClick}>Education</button>
             {showSkills ? (
@@ -120,23 +120,19 @@ export default function Home() {
                   <Image src={scroll} width={30} height={30} />
                   <p className='mx-2 dark:text-white'><span className="text-red-500">Nucamp Coding Bootcamp</span> - Back End, SQL, and DevOps Developer with Python</p>
                 </div>
-                <div className="flex flex-row items-center justify-start">
-                  <Image src={scroll} width={30} height={30} />
-                  <p className='mx-2 dark:text-white'><span className="text-red-500">Nucamp Coding Bootcamp</span> - Full Stack Web and Mobile App Developer</p>
-                </div>
               </div>
             )}
           </div>
           <div className="lg:flex gap-10">
 
-            {/*-------------------------------------------My Stack Div------------------------------------------------------------------*/}
+            {/*-------------------------------------------My Stack Div------------------------------------------------------------------outline outline-2 outline-red-400*/}
 
-            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
+            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
               <div className="flex items-center justify-center">
                 <Image src={languages} width={50} height={50} />
                 <h3 className="text-2xl font-medium ml-4">My Stack</h3>
               </div>
-              <h4 className="py-4 text-lg text-red-500">Languages & Frameworks</h4>
+              <h4 className="py-4 text-lg text-red-500">Languages</h4>
               <div className="flex flex-row items-center justify-start">
                 <Image src={htmlicon} width={30} height={30} />
                 <p className="text-gray-800 py-1 dark:text-white">HTML</p>
@@ -161,7 +157,7 @@ export default function Home() {
 
             {/*-------------------------------------------My Technologies Div------------------------------------------------------------------*/}
 
-            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
+            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
               <div className="flex items-center justify-center">
                 <Image src={technologies} width={50} height={50} />
                 <h3 className="text-2xl font-medium ml-4">Technologies</h3>
@@ -188,7 +184,7 @@ export default function Home() {
 
             {/*-------------------------------------------My Methods Div------------------------------------------------------------------*/}
 
-            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
+            <div className="bg-white flex-1 text-center shadow-xl p-10 rounded-xl my-10 dark:bg-gray-400 dark:bg-opacity-10 dark:text-white">
               <div className="flex items-center justify-center">
                 <Image src={methods} width={50} height={50} />
                 <h3 className="text-2xl font-medium ml-4">Methods</h3>
@@ -225,7 +221,7 @@ export default function Home() {
               <h3 className="text-2xl font-medium ml-4">Customer Feedback Form with Postgres Integration</h3>
               <p className='p-5'>This project involved building a feedback submission form using HTML and CSS, which allowed customers to submit their feedback. The form was then connected to a Postgres database, which stored the feedback for future analysis. By creating this feedback submission form, customers were able to easily provide feedback on their experiences, while the database allowed for easy tracking and analysis of this feedback. This project showcases my skills in web development, database integration, and user experience design.</p>
             </div>
-            <div>
+            <div className='sm:ml-5'>
               <Image src={contactformscreenshot} width={450} height={450} className="rounded-xl" />
             </div>
           </div>
