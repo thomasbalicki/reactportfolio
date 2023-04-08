@@ -65,17 +65,17 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a href="https://github.com/thomasbalicki">
+                <a href="https://github.com/thomasbalicki" target="_blank">
                   <Image src={github2} width={30} height={30} className="cursor-pointer hover:scale-105 transition-transform mx-1" />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/thomas-balicki-3105ba205/">
+                <a href="https://www.linkedin.com/in/thomas-balicki-3105ba205/" target="_blank">
                   <Image src={linkedin2} width={30} height={30} className="cursor-pointer hover:scale-105 transition-transform mx-1" />
                 </a>
               </li>
               <li>
-                <a className="bg-gradient-to-r from-red-400 to-orange-400 text-white px-3 py-2 rounded-md mx-1" href="#">Resume</a>
+                <a className="bg-gradient-to-r from-red-400 to-orange-400 text-white px-3 py-2 rounded-md mx-1" href="https://drive.google.com/file/d/1Hik8KPe05DV1A3HUXIXhjc32IXd1JmmG/view?usp=share_link" target="_blank">Resume</a>
               </li>
             </ul>
           </nav>
