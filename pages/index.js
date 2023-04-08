@@ -74,11 +74,6 @@ export default function Home() {
                   <Image src={linkedin2} width={30} height={30} className="cursor-pointer hover:scale-105 transition-transform mx-1" />
                 </a>
               </li>
-              {/*<li>
-                <a href="https://vmst.io/@ThomasTheTrainwreck">
-                  <Image src={mastodonicon} width={30} height={30} className="cursor-pointer hover:scale-105 transition-transform mx-1" />
-                </a>
-  </li>*/}
               <li>
                 <a className="bg-gradient-to-r from-red-400 to-orange-400 text-white px-3 py-2 rounded-md mx-1" href="#">Resume</a>
               </li>
@@ -86,11 +81,11 @@ export default function Home() {
           </nav>
 
           {/*-------------------------------------------NAME AND INTRO------------------------------------------------------------------*/}
-          <div className='flex flex-wrap items-center justify-center'>
+          <div className='flex text-center flex-wrap items-center justify-center'>
             <div className='p-5 dark:text-white w-full md:w-1/2'>
               <h2 className='text-4xl py-2 text-red-500 font-medium md:text-6xl dark:text-red-500'>Thomas Balicki</h2>
-              <h3 className='text-2xl py-2 md:text-3xl'>Software Developer.</h3>
-              <p className='text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-white'>Hi, I'm Tom, a programmer and web developer from Milwaukee. I love the process of creating something from scratch and seeing it come to life online. I'm always seeking new opportunities to learn and improve my skills in this rapidly-evolving field. Thanks for reading about me and my work, and I look forward to sharing more with you!</p>
+              <h3 className='text-2xl text-center py-2 md:text-3xl'>Software Developer.</h3>
+              <p className='text-md text-center py-2 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-white'>Hi, I'm Tom, a programmer and web developer from Milwaukee. I love the process of creating something from scratch and seeing it come to life online. I'm always seeking new opportunities to learn and improve my skills in this rapidly-evolving field. Thanks for reading about me and my work, and I look forward to sharing more with you!</p>
             </div>
             <div className="relative rounded-full w-80 h-80 mt-10 md:mt-0 overflow-hidden md:h-96 md:w-96 ">
               <Image src={IMG_9164} layout="fill" objectFit="cover" className="rounded-full" />
@@ -106,9 +101,7 @@ export default function Home() {
             <button className='hover:bg-red-300 transition-transform bg-red-400 text-white text-1xl px-3 py-1 rounded-md mx-2' onClick={handleEducationClick}>Education</button>
             {showSkills ? (
               <p className='text-sm py-2 leading-8 text-gray-800 dark:text-white'>
-                As a beginner with a fundamental understanding of various programming tools and technologies, I have a basic foundation in several programming languages and frameworks such as HTML, CSS with Tailwind, Python, JavaScript with React, and SQL. I am familiar with tools such as VS Code for coding and Github for version control, and am continuously increasing my proficiency.
-                Furthermore, I have experience working with PostgresSQL and PGAdmin for managing databases and building APIs using both flask and Django frameworks. While my understanding of software development life cycle (SDLC) methodologies and continuous integration/continuous delivery (CI/CD) workflows is still limited, I am willing to learn more about them and apply them in my work.
-                Lastly, I have a fundamental understanding of how to deploy applications on Amazon AWS, Microsoft Azure, and Google Cloud, and I am eager to deepen my knowledge in this area. I am committed to continuing my learning and expanding my skills in order to take on more complex programming projects in the future.
+                As a beginner, I have a fundamental understanding of several programming languages and frameworks like HTML, CSS with Tailwind, Python, JavaScript with React, and SQL. I'm also proficient in using VS Code and Github for coding and version control. Additionally, I have experience with PostgresSQL, PGAdmin, Flask, and Django for managing databases and building APIs. Although I have limited knowledge of SDLC methodologies and CI/CD workflows, I'm eager to learn and apply them to my work. I also have a basic understanding of deploying applications on AWS, Azure, and Google Cloud, and I'm motivated to deepen my knowledge in this area. Overall, I'm committed to continuous learning and skill development to tackle more complex programming projects in the future.
               </p>
             ) : (
               <div className="flex-1 p-5 text-lg items-center justify-start py-5 mx-2">
@@ -211,13 +204,13 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1 text-red-400'>My Projects</h3>
+            <h3 className='text-3xl py-1 text-red-400'>My Projects 👇</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-              Hello! This section of my website is currently under development, but I'm putting in the effort to add more projects soon. You can view what I'm currently working on by clicking on the Github icon located at the top of the page which will direct you to my Github profile. There, you can explore more of what I am working on, browse through the code, and read the documentation for each one. Thank you for visiting my website, and I hope you enjoy my projects!
+              Hello! This section of my website is currently under development, but I'm putting in the effort to add more projects soon. You can view what I'm currently working on by clicking on the Github icon located at the top of the page which will direct you to my Github profile. There, you can explore more of what's keeping me busy, browse through the code, and read the documentation for each one. Thank you for visiting my website, and I hope you enjoy my projects!
             </p>
           </div>
-          <div className='shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-500 dark:bg-opacity-10 flex justify-between dark:text-white'>
-            <div className='w-1/2'>
+          <div className='flex flex-wrap lg:flex-nowrap shadow-xl p-5 rounded-xl my-10 dark:bg-gray-500 dark:bg-opacity-10 flex justify-between dark:text-white'>
+            <div className='lg:w-1/2'>
               <h3 className="text-2xl font-medium ml-4">Customer Feedback Form with Postgres Integration</h3>
               <p className='p-5'>This project involved building a feedback submission form using HTML and CSS, which allowed customers to submit their feedback. The form was then connected to a Postgres database, which stored the feedback for future analysis. By creating this feedback submission form, customers were able to easily provide feedback on their experiences, while the database allowed for easy tracking and analysis of this feedback. This project showcases my skills in web development, database integration, and user experience design.</p>
             </div>
@@ -227,51 +220,6 @@ export default function Home() {
           </div>
 
         </section>
-
-        {/*-------------------------------------------Contact Me Section------------------------------------------------------------------*/}
-
-        {/*<section>
-          <div className='flex justify-end'>
-            <h3 className='text-3xl pt-10 text-red-400'>Contact Me</h3>
-          </div>
-          <div className='flex justify-end'>
-            <form action="/contact" method="POST" class="max-w-md bg-stone-100 flex-1 shadow-xl p-5 rounded-xl my-10 outline outline-2 outline-red-400 dark:bg-gray-500 dark:bg-opacity-10">
-              <div class="mb-4">
-                <label class="block text-red-400 text-sm font-bold mb-2" for="name">
-                  Name
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your name" />
-              </div>
-              <div class="mb-4">
-                <label class="block text-red-400 text-sm font-bold mb-2" for="email">
-                  Email
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your email" />
-              </div>
-              <div class="mb-4">
-                <label class="block text-red-400 text-sm font-bold mb-2" for="message">
-                  Message
-                </label>
-                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message"></textarea>
-              </div>
-              {/* Terms of service */}
-        {/*<div class="mb-4">
-                <div className="flex items-center gap-2">
-                  <input type="checkbox" name="terms" value="checked" />
-                  <p className="text-sm text-grey-500">I agree to be contacted via email</p>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <button class="bg-red-400 hover:bg-red-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                  Send
-                </button>
-              </div>
-            </form>
-          </div>
-            </section>*/}
-
-
-        {/*-------------------------------------------Footer Section------------------------------------------------------------------*/}
 
         <footer className="bg-stone-100 text-black py-10 dark:text-white dark:bg-gray-900">
           <div className="container mx-auto text-center">
