@@ -1,8 +1,8 @@
 {
+  "homepage": "http://thomasbalicki.github.io/reactportfolio",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://thomasbalicki.github.io/reactportfolio",
   "scripts": {
     "dev": "next dev",
     "predeploy": "npm run build",
