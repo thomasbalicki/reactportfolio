@@ -212,7 +212,7 @@ export default function Home() {
           <div className='flex flex-wrap lg:flex-nowrap shadow-xl p-5 rounded-xl my-10 dark:bg-gray-500 dark:bg-opacity-10 flex justify-between dark:text-white'>
             <div className='lg:w-1/2'>
               <h3 className="text-2xl font-medium ml-4">Customer Feedback Form with Postgres Integration</h3>
-              <p className='p-5'>This project involved building a feedback submission form using HTML and CSS, which allowed customers to submit their feedback. The form was then connected to a Postgres database, which stored the feedback for future analysis. By creating this feedback submission form, customers were able to easily provide feedback on their experiences, while the database allowed for easy tracking and analysis of this feedback. This project showcases my skills in web development, database integration, and user experience design.</p>
+              <p className='p-5'>This project involved building a feedback submission form using HTML and CSS, which allowed customers to submit their feedback. The form was then connected to a Postgres database, which stored the feedback for future analysis. By creating this feedback submission form, customers were able to easily provide feedback on their experiences, while the database allowed for easy tracking and analysis of this feedback. This project showcases my skills in web development, database integration, and user experience design. See code <a className="text-red-500" href="https://github.com/thomasbalicki/PostgresForm" target="_blank">here</a>.</p>
             </div>
             <div className='sm:ml-5'>
               <Image src={contactformscreenshot} width={450} height={450} className="rounded-xl" />
