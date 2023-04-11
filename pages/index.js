@@ -24,6 +24,7 @@ import mastodonicon from "../public/mastodonicon.png";
 import scroll from "../public/scroll.png";
 import dockericon from "../public/dockericon.png";
 import contactformscreenshot from "../public/contactformscreenshot.png";
+import marstravelwebsite from "../public/marstravelwebsite.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -216,6 +217,15 @@ export default function Home() {
             </div>
             <div className='sm:ml-5'>
               <Image src={contactformscreenshot} width={450} height={450} className="rounded-xl" />
+            </div>
+          </div>
+          <div className='flex flex-wrap lg:flex-nowrap shadow-xl p-5 rounded-xl my-10 dark:bg-gray-500 dark:bg-opacity-10 flex justify-between dark:text-white'>
+            <div className='lg:w-1/2'>
+              <h3 className="text-2xl font-medium ml-4">Travel to Mars: A Three.js Project</h3>
+              <p className='p-5'>I'm currently working on an interactive Mars travel page website using Three.js for my portfolio. Once completed, the website will be deployed on AWS. I'm in the process of modeling a 3D sphere of Mars to replace the current plane sphere, and visitors can currently maneuver the sphere around using their mouse. The website is still under development, and there will be many changes inluding more functionality before the official version is released. However, I'm thrilled to showcase my skills in 3D modeling and programming with this project. Be sure to check back for updates! See site <a className="text-red-500" href="https://mars-landing-page-kappa.vercel.app/" target="_blank">here</a>.</p>
+            </div>
+            <div className='sm:ml-5'>
+              <Image src={marstravelwebsite} width={450} height={450} className="rounded-xl" />
             </div>
           </div>
 
