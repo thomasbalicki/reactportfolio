@@ -70,3 +70,33 @@ const SubMenu = ({item}) => {
         </>
     );
 };
+const SubMenu = ({ item }) => {
+  const [subnav, setSubnav] = useState(false);
+
+  const showSubnav = () => {
+    setSubnav(!subnav);
+  };
+
+  return (
+    <>
+      <SidebarLink
+        to={item.path}
+        onClick={item.subNav && showSubnav}
+        style={{ borderBottom: subnav ? "none" : "1px solid #1d1e22" }}
+      >
+        {/* ... (your existing code) */}
+      </SidebarLink>
+      <div style={{ overflow: "hidden", maxHeight: subnav ? "200px" : "0" }}>
+        {subnav &&
+          item.subNav.map((item, index) => {
+            return (
+              <DropdownLink to={item.path} key={index}>
+                {/* ... (your existing code) */}
+              </DropdownLink>
+            );
+          })}
+      </div>
+    </>
+  );
+};
+
