@@ -163,4 +163,59 @@ function App() {
 
 export default App;
 
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import KeyboardIcon from '@mui/icons-material/Keyboard';
+import BoltIcon from '@mui/icons-material/Bolt';
+import SummarizeIcon from '@mui/icons-material/Summarize';
+import HelpIcon from '@mui/icons-material/Help';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
+export const SidebarData = [
+    {
+        title: "Dashboard",
+        icon: <DashboardIcon />,
+        path: "/",
+    },
+    {
+        title: "Transactions",
+        icon: <KeyboardIcon />,
+        path: "/transactions",
+    },
+    {
+        title: "Actions",
+        icon: <BoltIcon />,
+        iconClosed: <KeyboardArrowRightIcon />,
+        iconOpened: <KeyboardArrowDownIcon />,
+        subNav: [
+            {
+                title: "Action One",
+                icon: <ArrowForwardIcon />,
+                path: "/reports",
+            },
+            {
+                title: "Action Two",
+                icon: <ArrowForwardIcon />,
+                path: "/reports",
+            },
+            {
+                title: "Action Three",
+                icon: <ArrowForwardIcon />,
+                path: "/reports",
+            }
+        ]
+    },
+    {
+        title: "Reports",
+        icon: <SummarizeIcon />,
+        path: "/reports",
+    },
+    {
+        title: "FAQ",
+        icon: <HelpIcon />,
+        path: "/faq",
+    },
+];
+
 
