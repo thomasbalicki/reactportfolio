@@ -93,3 +93,74 @@ const SubMenu = ({item}) => {
 
 export default SubMenu;
 
+import React from "react";
+import "../../index.css";
+import { SidebarData } from "./SidebarData";
+import SubMenu from "./SubMenu";
+
+
+function Sidebar() {
+    return (
+        <div className="Sidebar">
+            <p className="SidebarMainTitle">AB DATA</p>
+            <p className="SidebarSubTitle">Donor Manager</p>
+            <hr className="HrBorder"></hr>
+            <ul className="SidebarList">
+                {SidebarData.map((item, index)=> {
+                    return <SubMenu item={item} key={index} />;
+                })}
+            </ul>
+            <hr className="HrBorder"></hr>
+        </div>
+    );
+}
+
+export default Sidebar;
+
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Topbar from "./scenes/global/Topbar";
+import Dashboard from "./scenes/dashboard";
+import Transactions from "./scenes/transactions";
+import BatchManagement from "./scenes/batch-management";
+import CampaignManagement from "./scenes/campaign-management";
+import DonorManagement from "./scenes/donor-management";
+import Reports from "./scenes/reports";
+import { lightTheme } from "./theme";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import Login from "./scenes/login";
+import Sidebar from "./scenes/global/Sidebar";
+
+function App() {
+    const [isSidebar, setIsSidebar] = useState(true);
+
+    //authentication state would actually be made a global auth state when auth is setup
+    //if authenticated we want to render the sidebar menu, if user is on login page and not authenticated sidebar should not be showing
+    const [authenticated, setAuthenticated] = useState(true);
+
+    return (
+        <ThemeProvider theme={lightTheme}>
+            <CssBaseline />
+            <div className="app">
+            { authenticated && <Sidebar setIsSidebar={setIsSidebar}/> }
+                <main className="content">
+                    <Topbar setIsSidebar={setIsSidebar}/>
+                    <Routes>
+                        {/*TODO: If authenticated user should not be able to access login page */}
+                        <Route path="/login" element={<Login />} />              
+                        <Route path="/" element={<Dashboard />} />
+                        <Route path="/transactions" element={<Transactions />} />
+                        <Route path="/batch-management" element={<BatchManagement />} />
+                        <Route path="/campaign-management" element={<CampaignManagement />} />
+                        <Route path="/donor-management" element={<DonorManagement />} />
+                        <Route path="/reports" element={<Reports />} />
+                    </Routes>
+                </main>
+            </div>
+            </ThemeProvider>
+    );
+}
+
+export default App;
+
+
